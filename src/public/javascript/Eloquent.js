@@ -1,6 +1,10 @@
 
 "use strict";
+//Import
+import { namE } from "../vocabularyJson/vocabulary.js";
 
+
+//Declaration variable
 let boxVocab = document.querySelector(".boxVocab");
 let fakeTag = document.querySelector(".fakeTag");
 let fakeTag2 = document.querySelector(".fakeTag2");
@@ -24,7 +28,7 @@ function filterData() {
 
     let filter_1 = data.textContent;
 
-    let filter_2 = filter_1.replace(/'/g, "");
+    let filter_2 = filter_1.replace(/"/g, "");
     let filter_3 = filter_2.replace(/,/g, "");
     let filter_4 = filter_3.replace("{", "");
     let filter_5 = filter_4.replace("}", "");
@@ -32,20 +36,29 @@ function filterData() {
     let filterDone1 = filterDone.pop();
     let filterDone2 = filterDone.shift();
     let filterDone3 = filterDone.shift();
-
     let object = {}
 
-    for (let i = 0; i < filterDone.length; i++) {
 
-        let number = filterDone[i].indexOf(" (");
-        let nameDone = filterDone[i].slice(2, number);
-        object[nameDone] = filterDone[i]
+    // for (let i = 0; i < filterDone.length; i++) {
+
+    //     let number = filterDone[i].indexOf(" (");
+    //     let nameDone = filterDone[i].slice(2, number);
+    //     object[nameDone] = filterDone[i]
+
+    // }
+    // return object
+
+    for (let i = 0; i < namE.length; i++) {
+
+        let number = namE[i].indexOf(" (");
+        let nameDone = namE[i].slice(0, number);
+        object[nameDone] = namE[i]
 
     }
     return object
 }
 
-let vocabulary = filterData()
+let vocabulary = filterData();
 
 // Đưa dataVocab vào local storage, và lấy ra
 
@@ -54,7 +67,6 @@ localStorage.setItem('vocabulary', JSON.stringify(vocabulary));
 let vocabOut = localStorage.getItem('vocabulary');
 let storeVocabOut = JSON.parse(vocabOut);
 let vocabArray = Object.values(storeVocabOut)
-
 // Các lệnh send vocabulary
 
 let form = document.querySelector("#typeVocab")
@@ -86,7 +98,7 @@ form.addEventListener("keyup", (e) => {
 
             let indexShowVocab = RighWords[currentVocabRight].index;
 
-            let showCurrentVOcab = currentVocabRight.charAt(2).toUpperCase() + currentVocabRight.slice(3);
+            let showCurrentVOcab = currentVocabRight.charAt(0).toUpperCase() + currentVocabRight.slice(1);
 
             let answer = showCurrentVOcab.includes(".");
             let locationPThree;
@@ -193,7 +205,7 @@ function displayVocab() {
 
             if (allItem[i].name && myScores >= 0) {
                 sendVocab.innerHTML += `    
-                <div class="child-textVocab"><span class="black_C">${y++ + 1}</span>. ${allItem[i].name.charAt(2).toUpperCase() + allItem[i].name.slice(3)}</div>
+                <div class="child-textVocab"><span class="black_C">${y++ + 1}</span>. ${allItem[i].name.charAt(0).toUpperCase() + allItem[i].name.slice(1)}</div>
                  `;
                 myScores++;
 
@@ -244,7 +256,7 @@ function disPlayCurrently(boolean, valueVocab) {
     if (valueVocab) {
         if (boolean == 10) {
             sendVocab.innerHTML += `    
-                    <div class="child-textVocab"><span class="black_C">${index}</span>. ${valueVocab.charAt(2).toUpperCase() + valueVocab.slice(3)}</div>
+                    <div class="child-textVocab"><span class="black_C">${index}</span>. ${valueVocab.charAt(0).toUpperCase() + valueVocab.slice(1)}</div>
                     `;
             fakeTag.click();
             addHourglass();
@@ -323,10 +335,17 @@ function listVocab() {
     let filterDone2 = filterDone.shift();
     let filterDone3 = filterDone.shift();
 
+    // let VocaLength = filterDone.length
+    // for (let i = 0; i < VocaLength; i++) {
+    //     allVocab.innerHTML += `
+    //     <div class="allVocab-child">${i + 1}.${filterDone[i]}</div>
+    //     `;
+    // };
+
     let VocaLength = filterDone.length
-    for (let i = 0; i < VocaLength; i++) {
+    for (let i = 0; i < namE.length; i++) {
         allVocab.innerHTML += `
-        <div class="allVocab-child">${i + 1}.${filterDone[i]}</div>
+        <div class="allVocab-child">${i + 1}.${namE[i]}</div>
         `;
     };
 
