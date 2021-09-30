@@ -1,0 +1,80 @@
+
+<div class="banner-of-shirts"><img src="/img/Banner/banner-1.jpg" alt="" class="img-100"></div>
+
+<div class="hide-filters"><img src="/img/fake-img/add-cart-4.PNG" alt="" class="img-100"></div>
+
+
+<div class="inside-filter">
+    <img src="/img/fake-img/add-cart-5.PNG" alt="" class="img1-inside-filter inline">
+    <img src="/img/fake-img/add-cart-6.PNG" alt="" class="img2-inside-filter inline">
+</div>
+
+{{!-- Sản phẩm --}}
+<div class="contain-all-shirt">
+
+                {{#each tshirts}} 
+
+    <div class="contain-shirt mb-10 ml-10 mr-10 overflow">
+        <div class="size-shirt-js none">{{this.size}}</div>
+        <div class="img-shirt-js none">{{this.image2}}</div>
+        <img src="{{this.image1}}" alt="" class="img-shirt">
+        <a href="/tshirts/{{this.slug}}" class="inline a-name decoration decoration-hover block">{{this.name}}</a>
+        <p class="p-cost inline">{{this.cost}}<p class="inline">.000đ</p></p>
+        <p class="p-color inline none">{{this.color}}</p>
+        <p class="p-textShirt inline font-2">MEN'S T-SHIRT</p>  
+        <p class="p-date inline none">{{this.createdAt}}</p>
+        <div class=""><p class="a-cart-shirt font-2">Add to cart</p></div>  
+
+        <div class="divSize transition-2">
+            <p class="p1-divSize p-divSize inline font-0 hover-p-divSize decoration cursor">XS</p>
+            <p class="p2-divSize p-divSize inline font-0 hover-p-divSize decoration cursor">S</p>
+            <p class="p3-divSize p-divSize inline font-0 hover-p-divSize decoration cursor">M</p>
+            <p class="p4-divSize p-divSize inline font-0 hover-p-divSize decoration cursor">L</p>
+            <p class="p5-divSize p-divSize inline font-0 hover-p-divSize decoration cursor">XL</p>
+            <div class="pickSize font-4 transition-2">PickSize</div>
+        </div>
+    </div>
+                    {{/each}}
+
+    <div class="itemCart right-100">
+        <div class="add-to-cart-itemCart inline">
+            <div class="text-line1 inline font-4">(<span class="span-text-line1"></span>) items in your cart</div>
+            <div class="in-add-to-cart"><a href="/tshirts/cart"><img src="/img/Icon/Cart-shoping.png" alt="" class="icon icon-3"><p class="p-cart-header2 font-2"></p></a></div>
+        </div>
+        <div class="delete-cart_itemCart font-2">X</div>
+        <div class="line3-itemCart">Students enjoy 15% off. <a href="" class="inline black">See details.</a></div>
+        <div class="line4-itemCart"></div>
+        <p class="cam-line4 inline"></p>
+        <div class="productAll-itemCart">
+            <div class="product-itemCart"></div>
+        </div>
+        <div class="total-itemCart-cart">
+            <p class="Subtotal-itemCart inline font-0">Subtotal <p class="border-circle inline font-4">?</p> </p>
+            <p class="Subtotal2-itemCart inline">250,000đ</p>
+        </div>
+        <div class="ship-itemCart-cart">
+            <p class="textShip-itemCart inline font-0">Shipping <p class="border-circle inline font-4">?</p> </p>
+            <p class="certified-itemCart inline font-2"> 30,000đ</p>
+            <img src="/img/PNG/Tich-Xanh.png" alt="" class="certified-img none">
+        </div>
+
+        <div class="checkOut-itemCart font-2">CheckOut</div>
+        <div class="momoCheckout-itemCart font-2">MoMo</div>
+        <div class="textDone-itemCart"><a href="/tshirts/cart" class="black">See full cart</a> to enter promo codes and gift options</div>
+
+
+
+    </div>
+   
+</div>
+
+
+
+
+
+
+
+
+
+   
+

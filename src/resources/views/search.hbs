@@ -1,0 +1,16 @@
+
+<h1 class="">This is {{tshirts10.name}}</h1>
+
+
+
+
+
+            {{#each tshirts10}} 
+
+    <div class="contain-shirt mt-20 ml-20 overflow">
+        <img src="{{this.image1}}" alt="" class="img-shirt">
+        <a href="/tshirts/{{this.slug}}" class="inline">{{this.name}}</a>  
+        <p>{{this.cost}},000đ</p>
+    </div>
+            {{/each}}
+

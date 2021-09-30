@@ -1,0 +1,51 @@
+<form method="POST" action="/tshirts/store">
+    <div class="form-group">
+        <label for="name">Tên sản phẩm</label>
+        <input type="text" name="name" id="name">
+    </div>
+
+    <label for="product" class="inline">Loại sản phẩm</label>
+    <select name="product" id="product" class="inline">
+        <option value="Chưa chọn">Chọn loại</option>
+        <option value="Shirt">Shirt</option>
+        <option value="Shoes">Shoes</option>
+    </select>
+
+    <div class="form-group">
+        <label for="description">Mô tả sản phẩm</label>
+        <input type="text" name="description" id="description">
+    </div>
+  
+    <label for="size" class="inline"> Size</label>
+    <select name="size" id="size" class="inline">
+        <option value="Chưa chọn">Chọn Size</option>
+        <option value="X">X</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+    </select>
+
+    <div class="form-group">
+        <label for="image1">Ảnh sản phẩm-1</label>
+        <input type="text" name="image1" id="image1">
+    </div>
+
+    <div class="form-group">
+        <label for="image2">Ảnh sản phẩm-2</label>
+        <input type="text" name="image2" id="image2">
+    </div>
+
+    <div class="form-group">
+        <label for="cost">Giá</label>
+        <input type="text" name="cost" id="cost">
+    </div>
+
+    <label for="color" class="inline">Màu áo</label>
+    <select name="color" id="color" class="inline">
+        <option value="Chưa chọn">Chọn màu</option>
+        <option value="Black">Màu đen</option>
+        <option value="White">Màu Trắng</option>
+        <option value="Yellow">Màu Vàng</option>
+    </select>
+    <button type="submit" class="block">Upload</button>
+</form>

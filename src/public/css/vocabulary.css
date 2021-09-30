@@ -1,0 +1,470 @@
+
+.containVocabLeft{
+    /* background-color: rgb(255, 0, 0); */
+    width: 850px;
+    margin-top: 65px;
+}
+.headerTwo{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: 6px;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(116, 216, 193);
+}
+.boxVocab{
+    position: absolute;
+    top: 90px;
+    left: 940px;
+    margin: 0 auto;
+    width: 620px;
+    height: 850px;
+    background-color: rgb(255, 255, 255);
+    overflow-y: auto;
+    z-index: 1;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    line-height: 30px;
+}
+#typeVocab{
+    position: absolute;
+    top: 450px;
+    left: 296.75px;
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    height: 25px;
+    box-sizing: border-box;
+    padding: 15px;
+    outline:none;
+    border-radius: 15px;
+    border: 1px solid rgb(216, 216, 216);
+}
+#typeVocab:focus{
+    box-shadow:1px 2px 15px -4px rgb(143, 143, 143)
+}
+.textVocab{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    border-bottom: 1px solid rgb(136, 136, 136);
+    /* background-color: rgb(255, 217, 0); */
+}
+.clearVocab{
+    position: absolute;
+    top: 520px;
+    left: 320px;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    /* background-color: orange; */
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(0, 0, 0);
+}
+.clearVocab:active{
+    background-color: white;
+    border: 0.5px solid black;
+    color: black;
+    user-select: none;
+}
+.contain-cartVocab{
+    position: absolute;
+    top: 213px;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(236, 233, 228);
+    border-radius: 30px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-left: 30px;
+}
+.child-textVocab{
+    margin-left: 10px;
+    padding-left: 5px;
+    font-family: Georgia, 'Nimbus Roman No9 L', 'Century Schoolbook L', serif;
+    color: #467;
+    /* border-bottom: 1px solid rgb(163, 163, 163); */
+}
+.text-2-Vocab{
+    font-size: 1.5em;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid black;
+    background-color: rgb(255, 0, 140)
+}
+.cartVocab-color{
+    color: rgb(0, 163, 238);
+}
+.VocabWrong-Color{
+    color: red;
+}
+.numIconResultVocab{
+    position: relative;
+    top: -10px;
+    width: 800px;
+    height: 20px;
+    margin: 0px auto 5px;
+    /* background-color: rgb(255, 0, 0); */
+}
+.iconResult-vocab{
+    position: relative;
+    top: -10px;
+    width: 800px;
+    height: 20px;
+    margin: 0px auto 5px;
+    /* background-color: rgb(255, 0, 0); */
+}
+.imgRightVocab{
+    width: 20px;
+    /* height: 20px; */
+}
+.imgWrongVocab{
+    width: 20px;
+}
+.imgNumVocab{
+    width: 20px;
+}
+.currentlyRight{
+    position: absolute;
+    top: 290px;  
+    left: 223.25px ;
+    width: 550px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    font-weight:550;
+    color: rgb(87, 87, 87);
+    text-align: center;
+    line-height: 30px;
+    transition: 0.5s linear;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1.1px;
+    /* background-color: red; */
+}
+.listVocab{
+    position: absolute;
+    top: 90px;
+    left: 940px;
+    width: 620px;
+    height: 750px;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+}
+.title_listVocab{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    font-family: Georgia, 'Nimbus Roman No9 L', 'Century Schoolbook L', serif;
+    cursor: pointer;
+    user-select: none;
+}
+.alLVocab{
+    font-family: Georgia, 'Nimbus Roman No9 L'; 
+    width: 620px;
+    height: 750px;
+    overflow-y: auto;
+    font-size: 1.2em;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    color: #467;
+}
+.hourglass{
+    position: absolute;
+    top: 213px;
+    left: 222.25px;
+    width: 550px;
+    height: 30px;
+    background-color: rgb(230, 230, 230);   
+    border-radius: 15px;
+    display: inline-block;
+    z-index: 1;
+}
+.hourglass::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 550px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);   
+    box-shadow: inset 0px 0px 10px 1px rgb(233, 233, 233);
+    border-radius: 15px;
+    display: inline-block;
+    z-index: -1;
+}
+.timeCountHourglass{
+    position: absolute;
+    width: 0.0001px;
+    height: 30px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.5s linear;
+    word-spacing: -4px;
+}
+.childStartHourglass{
+    position: absolute;
+    width: 550px;
+    height: 30px;
+    background-color: rgb(255, 208, 0);
+    border-radius: 15px;
+    /* animation: moveright 5s linear 3; */
+}
+@keyframes moveright{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 550px;
+    }
+}
+.orange{
+    background-color: rgb(255, 136, 0);
+}
+.red{
+    background-color: red;
+    color: black;
+}
+/* .orange{
+    background-color: rgb(255, 136, 0);
+} */
+.clickHourglass{
+    position: absolute;
+    top: 212px;
+    left: 800px;
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    float: right;
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(71, 71, 71);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    user-select: none;
+}
+.cliclAllVucab{
+    position: absolute;
+    top: 470px;
+    left: 99px;
+    width: 90px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 15px;
+    box-shadow: 1px 2px rgb(194, 194, 194);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    user-select: none;
+}
+.yellowCount{
+    position: absolute;
+    top: 303px;
+    left: 86px;
+    width: 50px;
+    height: 25px;
+    /* margin-right: 10px; */
+    line-height: 25px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid rgb(216, 216, 216);
+    /* background-color: rgb(255, 208, 0); */
+    outline: none;
+}
+.redCount{
+    position: absolute;
+    top: 303px;
+    left: 149px;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid rgb(216, 216, 216);
+    /* background-color:  rgb(255, 136, 0); */
+    outline: none;
+}
+.modeLowerAct{
+    animation: moveright 5s linear 3;
+}
+.modeLowAct{
+    animation: moveright 4s linear 3;
+}
+.modeHighAct{
+    animation: moveright 3s linear 3;
+}
+.modeLowerCount{
+    position: absolute;
+    top: 263px;
+    left: 110px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 208, 0);
+    float: left;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 2px rgb(71, 71, 71);
+
+}
+.modeLowCount{
+    position: absolute;
+    top: 263px;
+    left: 135px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 136, 0);
+    float: left;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 2px rgb(71, 71, 71);
+
+}
+.modeHighCount{
+    position: absolute;
+    top: 263px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    background-color: red;;
+    float: left;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 2px rgb(71, 71, 71);
+
+}
+#modeLowerInput{
+    display: none;
+}
+#modeLowInput{
+    display: none;
+}
+#modeHighInput{
+    display: none;
+}
+/* #modeLowerInput:checked ~ .modeLowerCount{
+    box-shadow: none;
+}
+#modeLowInput:checked ~ .modeLowCount{
+    box-shadow: none;
+}
+#modeHighInput:checked ~ .modeHighCount{
+    box-shadow: none;
+} */
+.white{
+    background-color: white;
+}
+.flexRightLeft{
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+    width: 99%;
+    height: 99%;
+    background-color: rgb(255, 255, 255);
+}
+.black_C{
+    color: black;
+    font-weight: 500;
+}
+.titleBoxVocab{
+    font-family: Georgia, 'Nimbus Roman No9 L', 'Century Schoolbook L', serif;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.buttonVocabShow{   
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    width: 90px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 1px 2px rgb(194, 194, 194);
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    display: inline-block;
+    background-image: url(/img/PNG/questionMark.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 27px 10px;
+}
+.buttonVocabShow:active{
+    box-shadow: none;
+}
+.textButtonVocab{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 50px;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9em;
+    font-weight:bolder;
+    white-space:normal;
+    text-align: center;
+    line-height: 15px;
+}
+.boxShadow_none{
+    box-shadow: none;
+}
+.boxShadow:active{
+    box-shadow: 1px 2px rgb(194, 194, 194);
+}
+.noneWhere{
+    display: none;
+}
+.moon{
+    position: absolute;
+    top: 213px;
+    left: 222px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: -15px -15px 0 0 rgb(255, 255, 255);
+    z-index: 3;
+}
+.moon2{
+    position: absolute;
+    top: 213px;
+    left: 222px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: -15px 15px 0px rgb(255, 255, 255);
+    z-index: 3;
+}
+.moon3{
+    position: absolute;
+    top: 213px;
+    left: 742px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 0 rgb(255, 255, 255);
+    z-index: 3;
+}
+.moon4{
+    position: absolute;
+    top: 213px;
+    left: 742px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0px rgb(255, 255, 255);
+    z-index: 3;
+}
+.inline{
+    display: inline-block;
+}
