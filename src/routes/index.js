@@ -1,13 +1,7 @@
-const tshirtsRouter = require('./tshirts')
-const siteRouter = require('./site')
-const vocabularyRouter = require('./vocabulary')
+const vocabularyRouter = require("./vocabulary");
 
-function route(app){
-    
-    app.use('/vocabulary', vocabularyRouter)
-    app.use('/tshirts', tshirtsRouter)
-    app.use('/', siteRouter)
-     
+function route(app) {
+  app.use("/vocabulary", vocabularyRouter);
 }
 
-module.exports = route
+module.exports = route;
