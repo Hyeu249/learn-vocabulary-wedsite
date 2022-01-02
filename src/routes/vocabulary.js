@@ -1,18 +1,7 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const VocabularyController = require('../app/controllers/VocabularyController')
-// const ShirtCart = require('../app/controllers/ShirtCartController')
+const VocabularyController = require("../app/controllers/VocabularyController");
 
-// router.get('/voca', VocabularyController.search);
-router.get('/create', VocabularyController.create);
-router.post('/store', VocabularyController.store);
-router.get('/', VocabularyController.index);
+router.get("/", VocabularyController.index);
 
-
-
-
-
-
-
-
-module.exports = router
+module.exports = router;

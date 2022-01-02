@@ -1,29 +1,120 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/vocabulary.css">
-    <link rel="stylesheet" href="/css/textEloquent.css">
-    <link rel="stylesheet" href="/css/swicth.css">
-    <link rel="stylesheet" href="/fonts/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
-    <link rel="shortcut icon" href="#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/css/vocabulary.css" />
+    <link rel="stylesheet" href="/css/textEloquent.css" />
+    <link rel="stylesheet" href="/css/swicth.css" />
+    <link
+      rel="stylesheet"
+      href="/fonts/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="#" />
     <title>Wed-1-Bao-Hieu</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-all">
-    <!-- Header -->
-        {{>header2}}
-    <!-- BODY -->
-        {{{body}}}
-   {{!-- Footer --}}
-        {{>footer}}
-    </div>    
+      <!-- Header -->
+      <div class="headerTwo font-7">Eloquent JavaScript</div>
+      <!-- BODY -->
+      <div class="swicth font-2">Swicth</div>
+      <div class="moon"></div>
+      <div class="moon2"></div>
+      {{! <div class="moon3"></div>
+<div class="moon4"></div> }}
+      <div class="flexRightLeft">
+        {{! Left }}
+        <div class="containVocabLeft">
+          {{! Số lượng }}
+          <div class="contain-cartVocab">
+            <span class="cartVocab">0</span>/<span
+              class="cartVocab-wrong"
+            >0</span>
+            {{! <span class="cartVocabNum none"></span> }}
+          </div>
+          {{! Icon Thể hiện đúng sai }}
+          <div class="numIconResultVocab none"></div>
+          <div class="iconResult-vocab none"></div>
+          {{! Đồng hồ cát }}
+          <input type="radio" name="gender" id="modeLowerInput" />
+          <input type="radio" name="gender" id="modeLowInput" />
+          <input type="radio" name="gender" id="modeHighInput" />
+
+          <label for="modeLowerInput" class="modeLowerCount inline"></label>
+          <label for="modeLowInput" class="modeLowCount inline"></label>
+          <label for="modeHighInput" class="modeHighCount inline"></label>
+
+          <div class="clickHourglass font-8">Start</div>
+          <input type="text" class="redCount inline" />
+          <input type="text" class="yellowCount inline" />
+          <div class="hourglass">
+            <div class="timeCountHourglass"></div>
+            <div class="childStartHourglass none"></div>
+          </div>
+
+          {{! Hiện từ vựng đúng hiện tại }}
+          <div class="currentlyRight-white"><div
+              class="currentlyRight"
+            ></div></div>
+          {{! Nơi show từ vựng }}
+          <div class="boxVocab">
+            <div class="titleBoxVocab">VOCABULARYS</div>
+            <div class="textVocab inline"></div>
+          </div>
+          {{! Thẻ input }}
+          <input type="text" id="typeVocab" autocomplete="off" />
+          {{! Nút Xóa }}
+          <div><a href="" class="clearVocab inline decoration">Xóa</a></div>
+          {{! Button show vocab }}
+          <div class="buttonVocabShow"><div class="textButtonVocab">WHERE AM I</div></div>
+          {{! Show tất cả từ vựng }}
+          <div class="cliclAllVucab inline">Vocab</div>
+          <div class="listVocab none">
+            <div class="title_listVocab">List
+              <span>Vocabulary</span>
+              (<span class="cartVocabNum"></span>)</div>
+            <div class="alLVocab"></div>
+          </div>
+          {{! Thẻ ảo }}
+          <div class="fakeTag none"></div>
+          <div class="fakeTag2 none"></div>
+          <div class="fakeTag3 none"></div>
+        </div>
+
+        {{! Right }}
+        <div class="containVocabRight">
+          <div class="eloquentTittle">
+            <div class="eloquentText1">Eloquent JavaScript</div>
+            <div class="eloquentText2">A Modern Introduction to Programming</div>
+            <div class="eloquentText3">by Marijn Haverbeke</div>
+          </div>
+          <div class="eloquentContain">
+            <div class="eloquentText">
+              <div class="eloquentText4"></div>
+            </div>
+            <img
+              src="/img/PNG/EloquentJavaScript.jpg"
+              alt=""
+              class="eloquentImg"
+            />
+            {{! <input type="text" class="button"> }}
+          </div>
+        </div>
+      </div>
+
+      {{! Bắt đầu phần Ngữ pháp }}
+
+      {{! Khai báo Javscript }}
+      <h1 class="dataVoca none">{{javaScript}}</h1>
+
+      <script type="module" src="/javascript/Eloquent.js"></script>
+      <div class="delete-cart_itemCart none"></div>
+    </div>
     <script src="/javascript/javascript.js"></script>
     <script type="module" src="/javascript/textEloquent.js"></script>
     <script src="/javascript/swicth.js"></script>
 
-</body>
+  </body>
 </html>
