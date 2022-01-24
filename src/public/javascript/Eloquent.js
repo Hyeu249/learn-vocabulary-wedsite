@@ -4,6 +4,9 @@
 import { namE } from "../vocabularyJson/vocabulary.js";
 
 
+
+
+
 //Declaration variable
 let boxVocab = document.querySelector(".boxVocab");
 let fakeTag = document.querySelector(".fakeTag");
@@ -87,6 +90,8 @@ form.addEventListener("keyup", (e) => {
         } else if (storeVocabOut[form.value.trim()].includes(form.value.trim())) {
             // gửi từ vựng Đúng đi
             let currentVocabRight = storeVocabOut[form.value.trim()];
+
+            new Audio(`http://localhost:3000/sound/${form.value.trim()}__gb_1.mp3`).play()
 
             rightWord(currentVocabRight);
 
@@ -292,7 +297,7 @@ cartVocab();
 
 // Tổng từ vựng cần học
 let cartVocabNum = document.querySelector(".cartVocabNum");
-cartVocabNum.textContent = Object.keys(vocabulary).length
+cartVocabNum.textContent = Object.values(vocabulary).filter((vocab)=> !vocab.includes("_____") && !(vocab === "")).length
 
 // Nơi thể hiện số từ vựng sai
 function VocabWrong() {
@@ -343,15 +348,23 @@ function listVocab() {
     // };
 
     let VocaLength = filterDone.length
+    let notAVocabLength = 0
     for (let i = 0; i < namE.length; i++) {
-        allVocab.innerHTML += `
-        <div class="allVocab-child">${i + 1}.${namE[i]}</div>
-        `;
+        const y = notAVocabLength
+        if(namE[i].includes("_____") || namE[i] === ""){
+            allVocab.innerHTML += `
+            <div class="allVocab-child">${namE[i] || "<br/>"}</div>
+            `;
+            notAVocabLength++
+        }else{
+            allVocab.innerHTML += `
+            <div class="allVocab-child">${i + 1 - y}.${namE[i]}</div>
+            `;
+        }
     };
 
     allVocab.addEventListener('scroll', () => {
         let scrolled = allVocab.scrollTop;
-        console.log(scrolled, "scrolled")
     })
 }
 listVocab();
@@ -535,8 +548,6 @@ function modeLowerActEvent() {
     childStartHourglass.classList.add("modeLowerAct");
     modeLowerCount.classList.add("boxShadow_none")
     startTest();
-    // let audio2 = document.querySelector(".audio2");
-    // audio2.play()
     modeLowerCount.removeEventListener("click", modeLowerActEvent);
     modeLowCount.removeEventListener("click", modeLowActvent);
     modeHighCount.removeEventListener("click", modeHighActEvent);
@@ -547,8 +558,6 @@ function modeLowActvent() {
     childStartHourglass.classList.add("modeLowAct");
     modeLowCount.classList.add("boxShadow_none")
     startTest();
-    // let audio2 = document.querySelector(".audio2");
-    // audio2.play()
     modeLowerCount.removeEventListener("click", modeLowerActEvent);
     modeLowCount.removeEventListener("click", modeLowActvent);
     modeHighCount.removeEventListener("click", modeHighActEvent);
@@ -559,8 +568,6 @@ function modeHighActEvent() {
     childStartHourglass.classList.add("modeHighAct");
     modeHighCount.classList.add("boxShadow_none")
     startTest();
-    // let audio2 = document.querySelector(".audio2");
-    // audio2.play()
     modeLowerCount.removeEventListener("click", modeLowerActEvent);
     modeLowCount.removeEventListener("click", modeLowActvent);
     modeHighCount.removeEventListener("click", modeHighActEvent);
@@ -589,8 +596,6 @@ function startTest() {
         if (document.querySelector(".modeLowAct")) { countVocab(1, yellowCountStart.value, redCountStart.value, 4000); };
         if (document.querySelector(".modeHighAct")) { countVocab(1, yellowCountStart.value, redCountStart.value, 3000); };
 
-        // let audio = document.querySelector(".audio");
-        // audio.play()
         clickHourglass.removeEventListener("click", startTestEvent);
     }
     clickHourglass.addEventListener("click", startTestEvent);
