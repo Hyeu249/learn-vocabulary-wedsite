@@ -37,6 +37,10 @@ const json = [
   // "compatible (n): tương thích",
   // "occupation (n): nghề nghiệp, sự chiếm giữ",
   // "sitcom (n): hài kịch(sistuation comedy)",
+  // "substance (n): chất(một loại rắn, lỏng hoặc khí có phẩm chất đặc biệt)",
+  // "permanent (adj): dài hạn",
+  // "inventory (n): hàng tồn trữ",
+
   "venture (n): mạo hiểm, liên doanh, hoạt động kinh doanh(thường rủi ro)",
   "aspire (v): khao khát",
   "sheet (n): ga trải giường, giấy",
@@ -76,8 +80,8 @@ const json = [
   "clinic (n): phòng khám",
   "assure (v): cam đoan(để nói với ai đó rằng điều gì đó chắc chắn là sự thật hoặc chắc chắn sẽ xảy ra, đặc biệt là khi họ nghi ngờ về điều đó)",
   "negotiation (n): đàm phán",
-  "retention (n): giữ lại",
   "acquisition (n): mua lại, tiếp nhận",
+  "retention (n): giữ lại",
   "auditorium (n): khán phòng",
   "cushion (n): đệm",
   "retail (n): bán lẻ",
@@ -88,7 +92,6 @@ const json = [
   "renown (n): nổi tiếng",
   "avenue (n): đại lộ, phố lớn(một con đường rộng trong một thị trấn hoặc thành phố)",
   "spray (v): phun",
-  "substance (n): chất(một loại rắn, lỏng hoặc khí có phẩm chất đặc biệt)",
   "breach (n): vi phạm, phá vỡ",
   "pump (v): bơm(bơm nước)",
   "_______________Unit_3_______________",
@@ -97,18 +100,18 @@ const json = [
   "sew (v): may, khâu",
   "merchandise (n): hàng hóa",
   "tunnel (n): đường hầm",
-  "permanent (adj): dài hạn",
   "cabinet (n): tủ(một món đồ nội thất có cửa, ngăn kéo và hoặc kệ, được sử dụng để lưu trữ hoặc trưng bày mọi thứ)",
   "eliminate (n): loại bỏ",
   "labor (n): nhân công",
-  "inventory (n): hàng tồn trữ",
   "leather (n): da-đồ thuộc da",
   "dock (n): bến tàu",
   "craft (n): thủ công",
   "delight (v): hân hoan",
   "triumph (n): sự chiến thắng",
   "sensor (n): cảm biến",
-  "microwaves (n): lò vi sóng",
+  "microwave (n): lò vi sóng",
+  "plumber (n): thợ sửa ống nước",
+  "suite (n): dãy phòng(một tập hợp các phòng, đặc biệt là trong một khách sạn)",
   "_______________Unit_4_______________",
   "railing (n): lan can",
   "garment (n): quần áo(một mảnh quần áo)",
@@ -180,10 +183,12 @@ const json = [
   "_____button-down shirt (n): áo sơ mi có cúc áo ở cổ áo để nút lại khi mang cà-vạt_____",
   "_____loading dock (n): khu vực đổ xe hàng xe công, khu vực đổ bến tàu(nơi các phương tiện vận tải hàng hóa được xếp và dỡ hàng hóa)_____",
   "_____Dalton Pretzels (n): tên bánh quy hình que_____",
+  "_____shuttle (n): con thoi_____",
+  "_____transit (n): quá cảnh_____",
 ];
 
-export { json as namE };
-// export { ANSWER_KEY as namE };
+// export { json as namE };
+export { ANSWER_KEY as namE };
 
 //Create vocabulary convention
 //nếu 1 từ, đặt bình thường
