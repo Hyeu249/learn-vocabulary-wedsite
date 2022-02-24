@@ -101,11 +101,11 @@ const json = [
   "scarf (n): khăn quàng cổ",
   "crop (n): mùa, vụ, cây trồng",
   "successor (n): người kế vị",
-  "conserve (v): thận trọng",
+  "conserve (v): thận trọng<br>+  conservative (adj): thận trọng, bảo thủ.",
 ];
 
-// export { json as namE };
-export { ANSWER_KEY as namE };
+export { json as namE };
+// export { ANSWER_KEY as namE };
 
 //Create vocabulary convention
 //nếu 1 từ, đặt bình thường
