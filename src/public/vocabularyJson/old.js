@@ -330,7 +330,7 @@ const json = [
   "dull (adj): dao cùn, buồn tẻ",
   "thick (adj): dày",
   "tractor (n): máy kéo",
-  "turnout (n): cử tri",
+  "turnout (n): người tham dự ,cử tri",
   "trait (n): đặc điểm",
   "constellation (n): chòm sao",
   "interfere (v): can thiệp",

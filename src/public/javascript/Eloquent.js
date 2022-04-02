@@ -96,7 +96,7 @@ form.addEventListener("keyup", (e) => {
           .then(() => console.log("sounding"))
           .catch(() => callAudio(++i));
       }
-      callAudio(0);
+      callAudio(1);
 
       rightWord(currentVocabRight);
 
