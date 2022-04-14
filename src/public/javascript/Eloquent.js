@@ -85,16 +85,34 @@ form.addEventListener("keyup", (e) => {
       let currentVocabRight = storeVocabOut[formValueTrim];
 
       async function callAudio(i) {
-        if (i > 100) {
+        if (i > 30) {
           console.log("overstack warning!");
           return;
         }
+        const api =
+          "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron";
+        const paramVoca = formValueTrim + "__gb";
+        const one = paramVoca[0];
+        const three = paramVoca.slice(0, 3);
+        const five = paramVoca.slice(0, 5);
+
         await new Audio(
-          `http://localhost:3000/sound/${formValueTrim}__gb_${i}.mp3`
+          // `http://localhost:3000/sound/${formValueTrim}__gb_${i}.mp3`
+          `${api}/${one}/${three}/${five}/${formValueTrim}__gb_${i}.mp3`
         )
           .play()
           .then(() => console.log("sounding"))
-          .catch(() => callAudio(++i));
+          .catch(() => {
+            new Audio(
+              `${api}/x/x${three.slice(0, 2)}/x${five.slice(
+                0,
+                4
+              )}/x${formValueTrim}__gb_${i}.mp3`
+            )
+              .play()
+              .then(() => console.log("sounding have x"))
+              .catch(() => callAudio(++i));
+          });
       }
       callAudio(1);
 

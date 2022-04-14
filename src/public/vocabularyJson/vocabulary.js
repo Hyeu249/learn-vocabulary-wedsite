@@ -175,7 +175,7 @@ const json = [
   "auction (n): bán đấu giá",
   "immerse (v): đắm mình",
   "curate (v): quản lý",
-  "endeavor (v): nỗ lực",
+  "endeavour (v): nỗ lực",
   "preside (v): chủ trì",
   "contend (v): cho rằng, đấu tranh",
   "abide (v): tuân theo",
