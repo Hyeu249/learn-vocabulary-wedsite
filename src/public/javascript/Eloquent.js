@@ -84,6 +84,7 @@ form.addEventListener("keyup", (e) => {
       // gửi từ vựng Đúng đi
       let currentVocabRight = storeVocabOut[formValueTrim];
 
+      // Function for API 1
       async function callAudio(i) {
         if (i > 30) {
           console.log("overstack warning!");
@@ -115,6 +116,13 @@ form.addEventListener("keyup", (e) => {
           });
       }
       callAudio(1);
+
+      // Function for API 2:
+      // const API = "https://www.collinsdictionary.com/sounds/hwd_sounds/en_us_";
+      // new Audio(`${API}${formValueTrim}.mp3`)
+      //   .play()
+      //   .then(() => console.log("sound"))
+      //   .catch(() => console.log("Err Audio"));
 
       rightWord(currentVocabRight);
 
