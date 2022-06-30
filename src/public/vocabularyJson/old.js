@@ -584,7 +584,7 @@ const json = [
   // "cordial (adj): thân ái, chân thành",
   // "fertilize (v): bón phân, thụ tinh",
   // "comply (v): tuân theo",
-  // "exhaust (n): khí thải",
+  // "exhaust (n): khí thải(thoát khí-thông gió)",
   // "drainage (n): thoát nước",
   // "eager (adj): háo hức",
   // "endorse (n): chứng thực",

@@ -1,7 +1,7 @@
-// import ANSWER_KEY from "./test1.js";
-// import ANSWER_KEY from "./ETS_2020_TEST-1.js";
+// import ANSWER_KEY from "./TEST_ETS_2022/test7.js";
+import ANSWER_KEY from "./TEST_ETS_2022/testRC_4.js";
 // import need_to_read from "./need_to_read.js";
-import ANSWER_KEY from "./HACKER_2_TEST-4.js";
+// import ANSWER_KEY from "./HACKER_2_TEST-4.js";
 
 const json = [
   "debris (n): mảnh vỡ, đống đổ nát",
@@ -36,8 +36,6 @@ const json = [
   "compromise (n): thỏa hiệp",
   // "mat (n): chiếu, thảm",
   // "drill (n): diễn tập, bài tập(khoan)",
-  // "rod (n): thanh, cần câu",
-  // "scissor (n): cái kéo",
   // "optician (n): bác sĩ đo mắt",
   // "caliber (n): tầm cỡ",
   // "rigorous (adj): nghiêm ngặt, nghiêm khắc",
@@ -113,7 +111,7 @@ const json = [
   // "culminate (v): đỉnh điểm",
   // "burst (v): nổ",
   // "stringent (adj): nghiêm ngặt",
-  // "exhaust (n): khí thải",
+  // "exhaust (n): khí thải(thoát khí-thông gió)",
   // "drain (v): rút nước, ráo nước<br>+ drainage (n): thoát nước.",
   // "amend (v): sửa đổi",
   // "dense (adj): dày đặc, rậm rạp, đần độn",
@@ -325,7 +323,6 @@ const json = [
   // "asteroid (n): tiểu hành tinh",
   // "impairment (n): suy giảm(khiếm khuyết)",
   // "nutty (adj): bổ dưỡng(hấp dẫn, vị hạt dẻ, nhiều quả hạch)",
-  // "shingles (n): tấm lợp-ngói(bệnh zona)",
   // "slab (n): phiến, tấm",
   // "polish (v): đánh bóng",
   // "forklift (n): xe nâng",
@@ -342,11 +339,20 @@ const json = [
   // "chin (n): cằm",
   // "mold (n): khuôn đúc (nhào nặn)",
   // "dosage (n): liều lượng",
-  // "prop (v): chống đỡ(hỗ trợ)",
+  // "prop (v): chống đỡ, nâng đỡ(hỗ trợ)",
+  // "geometric (adj): hình học",
+  // "divert (v): chuyển, chuyển hướng",
+  // "poach (v): kho(rim-cá)",
+  // "mileage (n): số dặm, có lợi",
+  // "wrinkle (n): nếp nhăn",
+  // "twist (v): xoắn",
+  // "botanical (adj): thuộc thực vật",
+  // "drought (n): hạn hán",
+  // "neglect (v,n): bỏ quên, bỏ rơi, bỏ mặc",
 ];
 
-export { json as namE };
-// export { ANSWER_KEY as namE };
+// export { json as namE };
+export { ANSWER_KEY as namE };
 // export { need_to_read as namE };
 
 //Create vocabulary convention

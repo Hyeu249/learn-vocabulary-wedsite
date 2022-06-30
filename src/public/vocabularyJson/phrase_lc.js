@@ -1,7 +1,7 @@
 import ANSWER_KEY from "./test1.js";
 
 const json = [
-  // "____________________ETS_2022_LC_TEST_2____________________",
+  // "____________________ETS_2022_LC_TEST_1____________________",
 ];
 //i noticed this pair of shoes was incorrectly scanned in as the more expensive deluxe version of the Wriggly line
 

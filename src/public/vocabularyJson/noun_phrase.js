@@ -58,6 +58,7 @@ const json = [
   // "____________________CAM_XANH_LC_TEST_2____________________",
   // "that has resulted in low satisfaction ratings (n): điều đó đã dẫn đến xếp hạng mức độ hài lòng thấp",
   // "____________________CAM_XANH_LC_TEST_3____________________",
+  // "leaning over (v): nghiêng về",
   // "original purchase (n): mua đứt(mua giá gốc)",
   // "client billing (n): tính tiền cho khách hàng",
   // "scented hand cream (n): kem bôi tay có hương thơm",
@@ -118,6 +119,7 @@ const json = [
   // "manufacturing processes (n): quy trình sản xuất",
   // "incentive of a bonus (n): khuyến khích tiền thưởng(persuade: pờ squay)",
   // "just a heads up that (n): chỉ cân lưu ý rằng",
+  // "retired work instructions (n): hướng dẫn việc làm đã dừng- đã cũ",
   // "____________________ETS_2022_LC_TEST_4____________________",
   // "place setting (n): việc sắp đặt",
   // "seating chart layout (n): sơ đồ chổ ngồi",
@@ -133,6 +135,8 @@ const json = [
   // "rope off (v): gở bỏ",
   // "continuing education credit (n): tín chỉ giáo dục thường xuyên(tín chỉ hỗ trợ chuyên gia duy trì giấy phép hành nghề)",
   // "cross-functional (n): đa chức năng",
+  // "____________________ETS_2019_LC_TEST_1____________________",
+  // "wall socket (n): ổ cắm điện",
 ];
 //i noticed this pair of shoes was incorrectly scanned in as the more expensive deluxe version of the Wriggly line
 

@@ -1,10 +1,27 @@
 import ANSWER_KEY from "./test1.js";
 
 const json = [
-  // "____________________GRAMMAR_ENGLISH____________________",
-  "whom: Ny + whom + S + V...",
-  "of: of + N/Ving",
-  "phrasal nouns: ADV + ADJ + N",
+  // "____________________CLAUSE OR N/VING____________________",
+  // "after: sau khi",
+  // "____________________WORD + CLAUSE____________________",
+  // "whom: ai, người mà(Ny + whom + S + V)",
+  // "even though: mặc dù",
+  // "while: trong khi(dùng nói về sự việc # và ss)",
+  // "just as: giống như",
+  // "____________________WORD + N/VING____________________",
+  // "of: của, về, vì,..",
+  // "thereby: do đó, qua đó",
+  // "notwithstanding: bất chấp",
+  // "regardless of: bất chấp",
+  // "____________________N(nhiều) OR N(KĐĐ)____________________",
+  // "a lot of: nhiều"
+  // "____________________WORD + N(nhiều)____________________",
+  // "many: nhiều",
+  // "few: ít"
+  // "____________________WORD + N(KĐĐ)____________________",
+  // "much: nhiều",
+  // "____________________BỔ NGỮ CHO ĐỘNG TỪ(VERB + WORD)____________________",
+  // "a lot: nhiều",
 ];
 
 export { json as namE };

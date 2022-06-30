@@ -80,6 +80,7 @@ form.addEventListener("keyup", (e) => {
       // showCurrentlyVocab.innerHTML = "";
       showCurrentlyVocab.classList.add("red");
       showCurrentlyVocab.textContent = formValueTrim;
+      form.value = "";
     } else if (storeVocabOut[formValueTrim].includes(formValueTrim)) {
       // gửi từ vựng Đúng đi
       let currentVocabRight = storeVocabOut[formValueTrim];
