@@ -1,4 +1,8 @@
 const need_to_read = [
+  // "__________________NEW__________________",
+  // "12 months in english",
+  // "days in english",
+  // "directions in english",
   // "__________________HARD__________________",
   // "bypass (v): đi vòng, bỏ qua",
   // "provided (conjunctions): miễn là",
