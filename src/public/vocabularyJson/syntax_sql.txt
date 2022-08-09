@@ -1,0 +1,48 @@
+*Notice:
+PART1(3):
+-Uppercase: SQL Command
+-Lowercase: human wrote, can multi and need commas after
+-Brackets: placeholder, can't multi
+-Will have examples for things can multi, and can't multi
+PART2(1):
+-INSERT an empty value = default value
+*Data_type:
+-VARCHAR(225)
+-INT 
+*Syntax:
+PART1(11):
+-SHOW DATABASES;
+-CREATE DATABASE <name>;
+-DROP DATABASE <name>;
+-USE <database_name>;
+-SELECT DATABASE();
+-CREATE TABLE <table_name>
+ (
+   column_name data_type DEFAULT <value> NOT NULL,
+   column_name data_type DEFAULT <value> NOT NULL,
+
+   column_name data_type NOT NULL AUTO_INCREMENT PRIMARY KEY*1,
+   PRIMARY KEY (column_name)*2
+ );
+-SHOW TABLES;
+-SHOW COLUMNS FROM <table_name>;
+-DESC <table_name>*1;
+-DESCRIBE <table_name>*2;
+-DROP TABLE <table_name>;
+PART2(3):
+-INSERT INTO <table_name> (column_name, column_name)
+ VALUES (value, value),
+        (value, value);
+-SELECT column_name, column_name AS alias_name || * 
+ FROM <table_name> 
+ WHERE column_name = desired_data || column_name
+;
+-SHOW WARNINGS;
+PART3(2):
+-UPDATE <table_name>
+ SET column_name = new_data
+ WHERE column_name = desired_data || column_name
+;
+-DELETE FROM <table_name>
+ WHERE column_name = desired_data || column_name
+;
