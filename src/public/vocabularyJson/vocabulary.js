@@ -1,8 +1,9 @@
 // import ANSWER_KEY from "./TEST_ETS_2022/test7.js";
 // import ANSWER_KEY from "./TEST_ETS_2022/testRC_4.js";
 // import ANSWER_KEY from "./TEST_CAM_XANH_2/test10.js";
-import ANSWER_KEY from "./TEST_CAM_XANH_2/testRC_8.js";
+// import ANSWER_KEY from "./TEST_CAM_XANH_2/testRC_8.js";
 // import need_to_read from "./need_to_read.js";
+import voca_for_coder from "./vocabulary_for_coder.js";
 
 const json = [
   // "debris (n): --------------------- mảnh vỡ, đống đổ nát",
@@ -292,33 +293,11 @@ const json = [
   // "stark (adj): hoàn toàn, rõ ràng",
   // "pond (n): cái ao",
   // "landfill (n): bãi rác",
-  // "__________________VOCABULARY_FOR_CODER__________________",
-  // "aggregate (n): tổng hợp, toàn bộ",
-  // "syllabus (n): giáo trình",
-  // "yield (v): mang lại",
-  // "radical (adj): triệt để",
-  // "synthesize (v): tổng hợp",
-  // "jargon (n): biệt ngữ",
-  // "deviate (v): đi lệch, trệch hướng",
-  // "replicate (v): sao chép",
-  // "subset (n): tập hợp con",
-  // "whittle (v): gọt",
-  // "caveat (n): báo trước",
-  // "laborious (adj): tốn công sức",
-  // "cliffhanger (n): câu chuyện hấp dẫn",
-  // "dilemma (n): tình huống khó xử",
-  // "shelter (n): trú ẩn(mái che, chòi, phòng)",
-  // 'redundant (n): dư thừa',
-  // "acronym (n): từ viết tắt",
-  // "arsenal (n): kho vũ khí",
-  // "alias (n): bí danh",
-  // "slaughter (v): tàn sát",
-  // "pluralize (n): đa dạng hóa",
-  // "extrapolate (v): ngoại suy",
 ];
 
 // export { json as namE };
-export { ANSWER_KEY as namE };
+// export { ANSWER_KEY as namE };
+export { voca_for_coder as namE };
 // export { need_to_read as namE };
 
 //Create vocabulary convention
