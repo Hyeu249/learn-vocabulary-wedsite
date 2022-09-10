@@ -46,6 +46,13 @@ const json = [
   //   "instantiate (v): tạo",
   //   "irreducible (adj): không thể điều khiển được",
   //   "reminisce (v): hồi tưởng",
+  // "plague (n): tai họa",
+  // "steep (adj): dốc đứng",
+  // "drawback (n): nhược điểm",
+  // "syndrome (n): hội chứng",
+  // "depict (v): miêu tả",
+  // "correlate (v): tương quan",
+  // "breadth (n): bề rộng, bề ngang",
 ];
 
 export default json;
