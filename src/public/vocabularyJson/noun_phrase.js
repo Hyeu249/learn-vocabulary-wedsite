@@ -2,7 +2,7 @@ import ANSWER_KEY from "./test1.js";
 
 const json = [
   // "____________________PHRASAL_VERBS____________________",
-  // "lean toward (v): nghiêng về",
+  // "lean toward (v): nghiêng về a",
   // "turn in (v): nộp, gửi",
   // "____________________HARD_PHRASAL____________________",
   // "to the lineup of daily headliners (n): vào danh sách các ngôi sao biểu diễn hàng ngày",
